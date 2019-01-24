@@ -11,18 +11,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>User Management</title>
+    <title>User</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/vendor/dataTables.bootstrap.css">
     <link rel="stylesheet" href="assets/css/vendor/AdminLTE.css">
     <link rel="stylesheet" href="assets/css/vendor/skins/_all-skins.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-<body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;" id="user-management-page">
+<body  id="user-page" class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
 <!-- Site wrapper -->
 <div class="wrapper" style="height: auto; min-height: 100%;">
 
@@ -202,7 +201,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu tree" data-widget="tree">
                 <li class="header">Menu</li>
-                <li><a href="./index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                <li><a href="./index.html" ><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
                 <li class="active"><a href="./usermanagement.html"><i class="fa fa-users"></i> <span>Account</span></a></li>
                 <li><a href="#"><i class="fa fa-user"></i> <span>User</span></a></li>
 
@@ -215,135 +214,104 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" style="min-height: 902.8px;">
         <!-- Content Header (Page header) -->
-        <section class="content-header" >
-            <h1>
-                User Management
-            </h1>
-            <button class="btn btn-success dataTable-plus"><i class="fa fa-plus"></i></button>
+        <section class="content-header">
+            <h1>User</h1>
         </section>
         <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="box">
+                    <div class="box box-danger">
                         <div class="box-header">
                         </div>
-                        <!-- /.box-header -->
                         <div class="box-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
-                                            <thead>
-                                            <tr role="row">
-                                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 5%">ID</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 20%">Name</th>
-                                                <th class="no-sort" tabindex="0"  rowspan="1" colspan="1">Avatar</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" >Phone</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Location</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Email</th>
-                                                <th class="no-sort" tabindex="0"  rowspan="1" colspan="1" ></th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">1</td>
-                                                <td>aaaaa</td>
-                                                <td>
-                                                    <img src="assets/img/dummy-avatar.jpg" alt="avatar" class="img-circle data-avatar img-responsive">
-                                                </td>
-                                                <td>03 785 123</td>
-                                                <td>San Francisco, CA</td>
-                                                <td>airisatou@gmail.com</td>
-                                                <td>
-                                                    <button class="btn-primary"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn-info"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn-danger"><i class="fa fa-trash"></i></button>
-                                                    <button class="btn-warning">Reset password</button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">2</td>
-                                                <td>bbbbb</td>
-                                                <td>
-                                                    <img src="assets/img/user_avatar.png" alt="avatar" class="img-circle data-avatar img-responsive">
-                                                </td>
-                                                <td>03 785 123</td>
-                                                <td>San Francisco, CA</td>
-                                                <td>airisatou@gmail.com</td>
-                                                <td>
-                                                    <button class="btn-primary"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn-info"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn-danger"><i class="fa fa-trash"></i></button>
-                                                    <button class="btn-warning">Reset password</button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">3</td>
-                                                <td>ccccc</td>
-                                                <td>
-                                                    <img src="assets/img/dummy-avatar.jpg" alt="avatar" class="img-circle data-avatar img-responsive">
-                                                </td>
-                                                <td>03 785 123</td>
-                                                <td>San Francisco, CA</td>
-                                                <td>airisatou@gmail.com</td>
-                                                <td>
-                                                    <button class="btn-primary"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn-info"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn-danger"><i class="fa fa-trash"></i></button>
-                                                    <button class="btn-warning">Reset password</button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">4</td>
-                                                <td>ddddd</td>
-                                                <td>
-                                                    <img src="assets/img/dummy-avatar.jpg" alt="avatar" class="img-circle data-avatar img-responsive">
-                                                </td>
-                                                <td>03 785 123</td>
-                                                <td>San Francisco, CA</td>
-                                                <td>airisatou@gmail.com</td>
-                                                <td>
-                                                    <button class="btn-primary"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn-info"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn-danger"><i class="fa fa-trash"></i></button>
-                                                    <button class="btn-warning">Reset password</button>
-                                                </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">5</td>
-                                                <td>eeeeeeee</td>
-                                                <td>
-                                                    <img src="assets/img/dummy-avatar.jpg" alt="avatar" class="img-circle data-avatar img-responsive">
-                                                </td>
-                                                <td>03 785 123</td>
-                                                <td>San Francisco, CA</td>
-                                                <td>airisatou@gmail.com</td>
-                                                <td>
-                                                    <button class="btn-primary"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn-info"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn-danger"><i class="fa fa-trash"></i></button>
-                                                    <button class="btn-warning">Reset password</button>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            <tfoot>
-                                            <tr>
-                                                <th rowspan="1" colspan="1">ID</th>
-                                                <th rowspan="1" colspan="1">Name</th>
-                                                <th rowspan="1" colspan="1">Avatar</th>
-                                                <th rowspan="1" colspan="1">Phone</th>
-                                                <th rowspan="1" colspan="1">Location</th>
-                                                <th rowspan="1" colspan="1">Email</th>
-                                                <th rowspan="1" colspan="1"></th>
-                                            </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <img src="assets/img/dummy-avatar.jpg" alt="avatar" class="img-responsive user-avatar">
                             </div>
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                <div>
+
+                                </div>
+                                <label>User Info</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-id">ID: </label>
+                                        <input id="user-id"type="text" class="form-control" value="1"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-name">Name: </label>
+                                        <input id="user-name"type="text" class="form-control" value="John Doe"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-phone">Phone: </label>
+                                        <input id="user-phone"type="text" class="form-control" value="+02.003.004.005"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-location">Location: </label>
+                                        <input id="user-location"type="text" class="form-control" value="San Francisco, CA"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-email">Email: </label>
+                                        <input id="user-email"type="text" class="form-control" value="JohnDoe@gmail.com"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <label>User Info</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-id">ID: </label>
+                                        <input id="user-id"type="text" class="form-control" value="1"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-name">Name: </label>
+                                        <input id="user-name"type="text" class="form-control" value="John Doe"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-phone">Phone: </label>
+                                        <input id="user-phone"type="text" class="form-control" value="+02.003.004.005"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-location">Location: </label>
+                                        <input id="user-location"type="text" class="form-control" value="San Francisco, CA"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="user-email">Email: </label>
+                                        <input id="user-email"type="text" class="form-control" value="JohnDoe@gmail.com"  disabled>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+
+                                <!-- Date mm/dd/yyyy -->
+                            </div>
+                            <!-- Date dd/mm/yyyy -->
                         </div>
                         <!-- /.box-body -->
                     </div>
+
                 </div>
             </div>
         </section>
@@ -352,7 +320,7 @@
     <!-- /.content-wrapper -->
 
 
-
+    <!-- Control Sidebar -->
 </div>
 
 
@@ -363,27 +331,9 @@
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/vendor/jquery.dataTables.min.js"></script>
-<script src="assets/js/vendor/dataTables.bootstrap.js"></script>
 <script src="assets/js/vendor/adminlte.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-    $(function () {
-        $('#example1').DataTable()
-        $('#example2').DataTable({
-            'paging'      : true,
-            'lengthChange': false,
-            'searching'   : false,
-            'ordering'    : true,
-            'info'        : true,
-            'autoWidth'   : false
-        });
-        $('#example1 thead').on('click','th.no-sort',function (e) {
-            e.stopPropagation();
-            return;
-        })
-    })
-</script>
+
 </body>
 </html>
 
