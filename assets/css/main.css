@@ -3216,6 +3216,9 @@ img {
 .content-wrapper {
   background: #fff; }
 
+.mt-30 {
+  margin-top: 30px; }
+
 .main-header a.sidebar-toggle {
   font-size: 14px; }
 
@@ -3352,11 +3355,15 @@ img {
   align-items: center;
   justify-content: space-between; }
 
+#user-page .user-avatar {
+  width: 90%; }
+
 #user-page .form-group {
   margin: 0; }
   #user-page .form-group .input-group {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 5px; }
     #user-page .form-group .input-group label {
       font-size: 1rem;
       color: #666;
@@ -3366,7 +3373,7 @@ img {
     #user-page .form-group .input-group input {
       width: 60%;
       font-size: 1rem; }
-    #user-page .form-group .input-group input[type=text]:disabled {
+    #user-page .form-group .input-group input[type=text]:disabled, #user-page .form-group .input-group input[type=password]:disabled, #user-page .form-group .input-group input[type=date]:disabled {
       background: #fff;
       color: #666;
       border: 0;
@@ -3376,6 +3383,12 @@ img {
       -ms-cursor: default;
       -o-cursor: default;
       cursor: default; }
+    #user-page .form-group .input-group input[type=checkbox] {
+      width: 10%;
+      margin: 0;
+      outline: 0; }
+      #user-page .form-group .input-group input[type=checkbox]:focus, #user-page .form-group .input-group input[type=checkbox]:active {
+        outline: 0; }
 
 body {
   font-size: 16px;

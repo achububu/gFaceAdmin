@@ -11,18 +11,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>User</title>
+    <title>Checkin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/vendor/dataTables.bootstrap.css">
     <link rel="stylesheet" href="assets/css/vendor/AdminLTE.css">
-    <link rel="stylesheet" href="assets/css/vendor/icheck-all.css">
     <link rel="stylesheet" href="assets/css/vendor/skins/_all-skins.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-<body  id="user-page" class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
+<body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;" >
 <!-- Site wrapper -->
 <div class="wrapper" style="height: auto; min-height: 100%;">
 
@@ -202,13 +202,12 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu tree" data-widget="tree">
                 <li class="header">Menu</li>
-                <li><a href="./index.html" ><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                <li><a href="./index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
                 <li><a href="./usermanagement.html"><i class="fa fa-users"></i> <span>Account</span></a></li>
-                <li class="active"><a href="./userpage.html"><i class="fa fa-user"></i> <span>User</span></a></li>
+                <li><a href="./userpage.html"><i class="fa fa-user"></i> <span>User</span></a></li>
                 <li><a href="./message.html"><span>Message</span></a></li>
                 <li><a href="./notifications.html"><span>Notification</span></a></li>
-                <li><a href="./checkin.html"><span>Checkin</span></a></li>
-
+                <li class="active"><a href="./checkin.html"><span>Checkin</span></a></li>
         </section>
         <!-- /.sidebar -->
     </aside>
@@ -216,168 +215,99 @@
     <!-- =============================================== -->
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper" style="min-height: 100%;">
+    <div class="content-wrapper" style="min-height: 902.8px;">
         <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>User</h1>
+        <section class="content-header" >
+            <h1>
+                Checkin Management
+            </h1>
         </section>
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="box box-danger" style="box-shadow: none;">
-                        <div class="box-header">
-                        </div>
-                        <div class="box-body">
-                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                <img src="./assets/img/dummy-avatar.jpg" alt="avatar" class="img-responsive user-avatar">
-                            </div>
-                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                <label>User Info</label>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>ID: </label>
-                                        <input type="text" class="form-control" value="1"  disabled>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label >Name: </label>
-                                        <input type="text" class="form-control" value="John Doe"  disabled>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label >Phone: </label>
-                                        <input type="text" class="form-control" value="+02.003.004.005"  disabled>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label >Location: </label>
-                                        <input type="text" class="form-control" value="San Francisco, CA"  disabled>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Email: </label>
-                                        <input type="text" class="form-control" value="JohnDoe@gmail.com"  disabled>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <label class="mt-30">User profile details</label>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Password:</label>
-                                        <input type="password" class="form-control" disabled value="123">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Tokens:</label>
-                                        <input type="text" class="form-control" disabled value="lksajdlajlksdjlksalkdlksadjlkaslkjd">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Reset password token:</label>
-                                        <input type="text" class="form-control" disabled value="asdasdqwe131049j0q9eq">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Reset password sent at</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Sign in count</label>
-                                        <input type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Current sign in at</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Current sign in ip</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Last sign in at</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Last sign in ip</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Confirmation sent at</label>
-                                        <input type="text" class="form-control"disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Confirmation token</label>
-                                        <input type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Confirmed at</label>
-                                        <input type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Failed attempts</label>
-                                        <input type="text" class="form-control" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Admin</label>
-                                        <input type="checkbox" class="checkmark" checked>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <label>Disable</label>
-                                        <input type="checkbox" class="checkmark">
-                                    </div>
-                                </div>
-                                <!-- Date mm/dd/yyyy -->
-                            </div>
-
-                            <!-- Date dd/mm/yyyy -->
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                        <tr role="row">
+                            <th>ID</th>
+                            <th>User name</th>
+                            <th>Checkin at</th>
+                            <th>Checkout at</th>
+                            <th>Location</th>
+                            <th>Create at</th>
+                            <th>Updated at</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr role="row" class="odd">
+                            <td>1</td>
+                            <td>John</td>
+                            <td>11:01:45 </td>
+                            <td>17:00:00</td>
+                            <td>Office</td>
+                            <td>24-01-2019 11:01:45</td>
+                            <td>24-01-2019 11:01:45</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td>2</td>
+                            <td>Bengi</td>
+                            <td>11:01:45 </td>
+                            <td>17:00:00</td>
+                            <td>Office</td>
+                            <td>24-01-2019 11:01:45</td>
+                            <td>24-01-2019 11:01:45</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td>3</td>
+                            <td>Marin</td>
+                            <td>11:01:45 </td>
+                            <td>17:00:00</td>
+                            <td>Office</td>
+                            <td>24-01-2019 11:01:45</td>
+                            <td>24-01-2019 11:01:45</td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td>4</td>
+                            <td>Bang</td>
+                            <td>11:01:45 </td>
+                            <td>17:00:00</td>
+                            <td>Office</td>
+                            <td>24-01-2019 11:01:45</td>
+                            <td>24-01-2019 11:01:45</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Faker</td>
+                            <td>11:01:45 </td>
+                            <td>17:00:00</td>
+                            <td>Office</td>
+                            <td>24-01-2019 11:01:45</td>
+                            <td>24-01-2019 11:01:45</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>User name</th>
+                            <th>Checkin at</th>
+                            <th>Checkout at</th>
+                            <th>Location</th>
+                            <th>Create at</th>
+                            <th>Updated at</th>
+                        </tr>
+                        </tfoot>
+                    </table>
                 </div>
-
             </div>
-        </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 
 
-    <!-- Control Sidebar -->
+
 </div>
 
 
@@ -388,11 +318,23 @@
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/vendor/icheck.min.js"></script>
-
+<script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+<script src="assets/js/vendor/dataTables.bootstrap.js"></script>
 <script src="assets/js/vendor/adminlte.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script>
+    $(function () {
+        $('#example1').DataTable()
+        $('#example2').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
+        });
+    })
+</script>
 </body>
 </html>
 
